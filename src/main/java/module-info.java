@@ -10,7 +10,14 @@ module com.example.application {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires java.sql;
 
     opens com.example.application to javafx.fxml;
     exports com.example.application;
+    exports com.example.application.connexionbdd;
+    opens com.example.application.connexionbdd to javafx.fxml;
+    exports com.example.application.identification;
+    opens com.example.application.identification to javafx.fxml;
+    exports com.example.application.controleur;
+    opens com.example.application.controleur to javafx.fxml;
 }
