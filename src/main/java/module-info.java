@@ -20,4 +20,8 @@ module com.example.application {
     opens com.example.application.identification to javafx.fxml;
     exports com.example.application.controleur;
     opens com.example.application.controleur to javafx.fxml;
+
+    // Ajoutez votre module personnalisé ici
+    exports com.example.application.interactionbdd;
+    opens com.example.application.interactionbdd to javafx.fxml;
 }

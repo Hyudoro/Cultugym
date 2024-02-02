@@ -1,46 +1,119 @@
 package com.example.application;
 
-import com.example.application.connexionbdd.Bddco;
+import com.example.application.interactionbdd.Bdd;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ComboBox;
 import javafx.stage.Stage;
-import javafx.stage.WindowEvent;
-
-import java.io.IOException;
 
 public class Monapplication extends Application {
-    private Bddco bddco; // Déclaration de la connexion à la base de données
-    private boolean applicationClosed = false; // Variable de contrôle
+    private Bdd bdd; // Assurez-vous que Bdd est correctement initialisé
 
     @Override
-    public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Monapplication.class.getResource("/interface.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("Titre de Votre Application");
-        stage.setScene(scene);
-        stage.show();
-
-        // Test de la connexion à la base de données
-        bddco = new Bddco();
-
-        // Gestionnaire d'événements pour la fermeture de la fenêtre principale
-        stage.setOnCloseRequest((WindowEvent we) -> {
-            // Fermeture de la connexion à la base de données uniquement si l'application se ferme intentionnellement
-            if (!applicationClosed) {
-                System.out.println("Connexion à la base de données fermée avec succès !");
-                bddco.closeConnection();
-            }
-        });
+    public void init() throws Exception {
+        super.init();
+        bdd = new Bdd();
     }
 
-    public static void main(String[] args) {
-        launch();
+    @Override
+    public void start(Stage stage) throws Exception {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/interface.fxml"));
+        Parent root = fxmlLoader.load();
+        Scene scene = new Scene(root);
+        stage.setTitle("Cultugym");
+        stage.setScene(scene);
+
+        ComboBox<String> comboBox = (ComboBox<String>) scene.lookup("#comboboxid");
+        if (comboBox != null) {
+            comboBox.setItems(bdd.getExercices());
+        } else {
+            System.out.println("ComboBox not found");
+        }
+
+        stage.show();
     }
 
     @Override
     public void stop() throws Exception {
-        applicationClosed = true;
         super.stop();
+        bdd.stop(); // Appelle la méthode stop de Bdd pour fermer la connexion
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
