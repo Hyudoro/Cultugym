@@ -1,11 +1,12 @@
 package com.example.application;
 
+import com.example.application.identification.Control_page_identifiant;
+
 import com.example.application.interactionbdd.Bdd;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.ComboBox;
 import javafx.stage.Stage;
 
 public class Monapplication extends Application {
@@ -17,21 +18,17 @@ public class Monapplication extends Application {
         bdd = new Bdd();
     }
 
+
     @Override
     public void start(Stage stage) throws Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/interface.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/Interface_identifiant.fxml"));
         Parent root = fxmlLoader.load();
+        Control_page_identifiant controller = fxmlLoader.getController();
+        controller.initialisation();
+
         Scene scene = new Scene(root);
-        stage.setTitle("Cultugym");
+        stage.setTitle("Cultugym [connexion]");
         stage.setScene(scene);
-
-        ComboBox<String> comboBox = (ComboBox<String>) scene.lookup("#comboboxid");
-        if (comboBox != null) {
-            comboBox.setItems(bdd.getExercices());
-        } else {
-            System.out.println("ComboBox not found");
-        }
-
         stage.show();
     }
 
@@ -40,80 +37,4 @@ public class Monapplication extends Application {
         super.stop();
         bdd.stop(); // Appelle la méthode stop de Bdd pour fermer la connexion
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

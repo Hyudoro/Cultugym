@@ -2,7 +2,7 @@ module com.example.application {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
-
+    requires javafx.swing;
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
     requires net.synedra.validatorfx;
@@ -11,6 +11,10 @@ module com.example.application {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
     requires java.sql;
+    requires mysql.connector.j;
+    requires jbcrypt;
+    requires java.datatransfer;
+    requires jakarta.mail;
 
     opens com.example.application to javafx.fxml;
     exports com.example.application;
@@ -24,4 +28,6 @@ module com.example.application {
     // Ajoutez votre module personnalisé ici
     exports com.example.application.interactionbdd;
     opens com.example.application.interactionbdd to javafx.fxml;
+    exports com.example.application.controleur.calendrier;
+    opens com.example.application.controleur.calendrier to javafx.fxml;
 }

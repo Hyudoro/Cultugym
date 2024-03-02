@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="764.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.application.controleur.Control_Interface_Creation_Client">
+   <children>
+      <AnchorPane prefHeight="612.0" prefWidth="762.0">
+         <children>
+            <Text layoutX="96.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" />
+            <TextArea fx:id="Description" layoutX="190.0" layoutY="54.0" prefHeight="182.0" prefWidth="568.0" />
+            <Text layoutX="67.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="image_face" />
+            <Text layoutX="172.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="image_derriere" />
+            <Text layoutX="289.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="image_profil_droit" />
+            <Text layoutX="423.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="image_profil_gauche" />
+            <ImageView fx:id="image_face" fitHeight="78.0" fitWidth="85.0" layoutX="54.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="image_derriere" fitHeight="78.0" fitWidth="85.0" layoutX="169.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="image_profil_droit" fitHeight="78.0" fitWidth="85.0" layoutX="294.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="image_profil_gauche" fitHeight="78.0" fitWidth="85.0" layoutX="423.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true" />
+            <Spinner fx:id="Taille" layoutX="671.0" layoutY="287.0" prefHeight="26.0" prefWidth="79.0" />
+            <Spinner fx:id="Poids" layoutX="671.0" layoutY="320.0" prefHeight="26.0" prefWidth="79.0" />
+            <ComboBox fx:id="Sexe" layoutX="671.0" layoutY="391.0" prefHeight="26.0" prefWidth="79.0">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="F" />
+                     <String fx:value="M" />
+                  </FXCollections>
+
+               </items>
+            </ComboBox>
+            <Text layoutX="638.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Taille" />
+            <Text layoutX="638.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Poids" />
+            <Text layoutX="639.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sexe" />
+            <TextField fx:id="Nom_utilisateur" layoutX="330.0" layoutY="387.0" />
+            <TextField fx:id="Adresse" layoutX="330.0" layoutY="527.0" />
+            <TextField fx:id="Prenom" layoutX="330.0" layoutY="423.0" />
+            <TextField fx:id="Nom" layoutX="330.0" layoutY="458.0" />
+            <TextField fx:id="Email" layoutX="330.0" layoutY="493.0" />
+            <Text layoutX="224.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom utilisateur " />
+            <Text layoutX="268.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prénom" />
+            <Text layoutX="281.0" layoutY="475.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" />
+            <Text layoutX="280.0" layoutY="511.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+            <Text layoutX="268.0" layoutY="545.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse" />
+            <Text layoutX="605.0" layoutY="475.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Experience" />
+            <ComboBox fx:id="Experience" layoutX="671.0" layoutY="457.0" prefHeight="26.0" prefWidth="79.0">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="Débutant" />
+                     <String fx:value="Intermédiaire" />
+                     <String fx:value="professionnel" />
+                  </FXCollections>
+
+               </items>
+            </ComboBox>
+            <ComboBox fx:id="Corpulence" layoutX="671.0" layoutY="430.0" prefHeight="26.0" prefWidth="79.0">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="Mesomorphe" />
+                     <String fx:value="Endomorphe" />
+                     <String fx:value="Ectomorphe" />
+                  </FXCollections>
+               </items>
+            </ComboBox>
+            <Text layoutX="602.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Corpulence" />
+            <Text layoutX="275.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Création de clientèle " wrappingWidth="328.53675079345703">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="logo" fitHeight="174.0" fitWidth="225.0" layoutY="-21.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="5.0" layoutY="561.0" prefHeight="54.0" prefWidth="133.0" text="N°client ">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="valider_ajout" layoutX="543.0" layoutY="490.0" mnemonicParsing="false" prefHeight="99.0" prefWidth="199.0" text="valider" textFill="#009dff">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Button>
+            <Label fx:id="Numero_dossier" alignment="BOTTOM_LEFT" layoutX="89.0" layoutY="563.0" prefHeight="38.0" prefWidth="121.0" text="nombre">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="code_postal" layoutX="331.0" layoutY="563.0" />
+            <Text layoutX="249.0" layoutY="580.0" strokeType="OUTSIDE" strokeWidth="0.0" text="code_postal" />
+            <Text fx:id="validation_insertion" fill="#55d44c" layoutX="516.0" layoutY="606.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="252.87115478515625" />
+            <Text fx:id="format_images" fill="#ef0e0e" layoutX="18.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="514.3145446777344" />
+            <Text fill="#14bf14" layoutX="310.0" layoutY="606.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*le code postal doit être un nombre." />
+            <Spinner fx:id="age" layoutX="671.0" layoutY="252.0" prefHeight="26.0" prefWidth="79.0" />
+            <Text layoutX="642.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="age" />
+            <ComboBox fx:id="niveau_activite" layoutX="671.0" layoutY="366.0" prefHeight="26.0" prefWidth="79.0">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="Sédentaire" />
+                     <String fx:value="Activitè restreinte" />
+                     <String fx:value="Activité Modérée" />
+                     <String fx:value="Hyper active" />
+                  </FXCollections>
+               </items>
+            </ComboBox>
+
+
+
+            <Text layoutX="574.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Niveau d'activité" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

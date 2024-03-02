@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="646.0" prefWidth="883.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.application.controleur.Control_Interface">
+    <MenuBar>
+        <Menu text="Aide">
+            <MenuItem text="chose à savoir" />
+        </Menu>
+    </MenuBar>
+    <AnchorPane VBox.vgrow="ALWAYS">
+        <Label fx:id="nombre_client_total" layoutX="107.0" layoutY="605.0" textFill="#18a611" />
+        <ComboBox fx:id="comboboxid" layoutX="11.0" layoutY="258.0" prefHeight="26.0" prefWidth="142.0" promptText="Liste des exercices" />
+        <Text fill="#5b4747" layoutX="321.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client N°">
+            <font>
+                <Font name="Agency FB" size="45" />
+            </font>
+        </Text>
+
+        <HBox layoutX="150.0" layoutY="171.0" spacing="10" />
+        <VBox layoutX="448.0" layoutY="158.0" prefHeight="227.0" prefWidth="94.0" spacing="5">
+            <Text text="PRENOM : " />
+            <Label fx:id="prenom_id" />
+            <Text text="Nom utilisateur : " />
+            <Label fx:id="nom_utilisateur_id" />
+            <Text text="Email : " wrappingWidth="203.09994506835938" />
+            <Label fx:id="email_id" />
+            <Text text="Code postal : " />
+            <Label fx:id="code_postal_id" />
+            <Text text="Adresse : " />
+            <Label fx:id="adresse_id" />
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Age : " />
+        </VBox>
+        <VBox layoutX="679.0" layoutY="157.0" spacing="5">
+            <Text text="NOM : " />
+            <Label fx:id="nom_id" />
+            <Text text="Sexe :" />
+            <Label fx:id="sexe_id" />
+            <Text text="Taille : " />
+            <Label fx:id="taille_id" />
+            <Text text="Poids :" />
+            <Label fx:id="poids_id" />
+            <Text text="Corpulence :" />
+            <Label fx:id="corpulence_id" />
+            <Text text="Experience :" />
+            <Label fx:id="experience_id" />
+        </VBox>
+         <Text layoutX="453.0" layoutY="433.0" text="Description : " />
+      <Label fx:id="description_id" alignment="TOP_LEFT" layoutX="453.0" layoutY="441.0" prefHeight="126.0" prefWidth="421.0" />
+      <TextField fx:id="client_id" layoutX="453.0" layoutY="14.0" prefHeight="53.0" prefWidth="231.0" />
+         <Spinner fx:id="spinner4" editable="true" layoutX="209.0" layoutY="385.0" prefHeight="26.0" prefWidth="69.0" />
+         <Spinner fx:id="spinner1" layoutX="209.0" layoutY="258.0" prefHeight="26.0" prefWidth="74.0" />
+         <Spinner fx:id="spinner2" layoutX="209.0" layoutY="297.0" prefHeight="26.0" prefWidth="74.0" />
+         <Spinner fx:id="spinner6" editable="true" layoutX="209.0" layoutY="471.0" prefHeight="26.0" prefWidth="69.0" />
+         <Spinner fx:id="spinner3" editable="true" layoutX="209.0" layoutY="342.0" prefHeight="26.0" prefWidth="74.0" />
+         <Spinner fx:id="spinner5" editable="true" layoutX="209.0" layoutY="429.0" prefHeight="26.0" prefWidth="69.0" />
+      <Text layoutX="287.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Séries d'echauffement" />
+      <Text layoutX="290.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Séries" />
+      <Text layoutX="291.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Répétitions" />
+      <Text layoutX="287.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\%Rep max" />
+      <Text layoutX="286.0" layoutY="446.0" strokeType="OUTSIDE" strokeWidth="0.0" text="temps de repos (min)" />
+      <Text layoutX="281.0" layoutY="482.0" strokeType="OUTSIDE" strokeWidth="0.0" text="degrés d'échec" />
+      <Button fx:id="Ajout" layoutX="209.0" layoutY="512.0" mnemonicParsing="false" text="+">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="photo_face" fitHeight="100.0" fitWidth="100.0" layoutX="295.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="photo_derriere" fitHeight="100.0" fitWidth="100.0" layoutX="103.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="photo_droite" fitHeight="100.0" fitWidth="100.0" layoutX="196.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="photo_gauche" fitHeight="100.0" fitWidth="100.0" layoutX="11.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="383.0" layoutY="574.0" mnemonicParsing="false" onAction="#Ouverture_deuxieme_fenetre" prefHeight="53.0" prefWidth="179.0" text="Emploie du temps " />
+      <Button fx:id="suppression" layoutX="453.0" layoutY="76.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="113.0" text="Supprimer client" />
+      <Text fill="#00a60e" layoutX="11.0" layoutY="617.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre de clients : ">
+         <font>
+            <Font name="NSimSun" size="10.0" />
+         </font>
+      </Text>
+      <Button fx:id="fenetre_ajout_client" layoutX="572.0" layoutY="76.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="113.0" text="Ajouter client" />
+      <ImageView fx:id="logo" fitHeight="227.0" fitWidth="210.0" layoutX="666.0" layoutY="-37.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="lancement_fenetre_affichage_client" layoutX="581.0" layoutY="583.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="294.0" text="clientèle " />
+      <Label fx:id="agee" layoutX="445.0" layoutY="396.0" />
+      <Text layoutX="684.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Niveau activité" />
+      <Label fx:id="niveau_activite" layoutX="771.0" layoutY="420.0" prefHeight="18.0" prefWidth="100.0" />
+    </AnchorPane>
+</VBox>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="389.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.application.identification.Control_page_identifiant">
+   <AnchorPane prefHeight="392.0" prefWidth="440.0">
+      <TextField fx:id="nom_utilisateur" layoutX="150.0" layoutY="254.0" />
+      <TextField fx:id="mot_de_passe" layoutX="152.0" layoutY="320.0" />
+      <Hyperlink fx:id="inscription" layoutX="152.0" layoutY="352.0" text="s'inscrire" />
+      <Text layoutX="168.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom d'utilisateur" />
+      <Text layoutX="189.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mot de passe" />
+      <Text layoutX="52.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue sur Cultugym ! " wrappingWidth="348.5367431640625">
+         <font>
+            <Font name="Calibri Bold" size="32.0" />
+         </font>
+      </Text>
+      <Button fx:id="validation" layoutX="325.0" layoutY="283.0" mnemonicParsing="false" text="valider" />
+      <Label fx:id="msg1" layoutX="27.0" layoutY="258.0" prefHeight="18.0" prefWidth="92.0" />
+      <Label fx:id="emoji1" alignment="CENTER" layoutX="111.0" layoutY="254.0" prefHeight="26.0" prefWidth="26.0" />
+      <Label fx:id="msg2" layoutX="31.0" layoutY="324.0" prefHeight="18.0" prefWidth="84.0" />
+      <Label fx:id="emoji2" alignment="CENTER" layoutX="111.0" layoutY="321.0" prefHeight="24.0" prefWidth="26.0" />
+      <Label fx:id="message_erreur" alignment="CENTER" layoutX="-4.0" layoutY="206.0" prefHeight="18.0" prefWidth="458.0" />
+      <ImageView fx:id="logo" fitHeight="200.0" fitWidth="200.0" layoutX="125.0" layoutY="14.0">
+      </ImageView>
+      <Hyperlink fx:id="desinscription" layoutX="235.0" layoutY="352.0" text="désinscrire" />
+   </AnchorPane>
+</VBox>

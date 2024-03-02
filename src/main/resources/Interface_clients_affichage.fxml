@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="755.0" prefWidth="986.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.application.controleur.Control_interface_affichage_client">
+   <children>
+      <AnchorPane prefHeight="762.0" prefWidth="986.0">
+         <children>
+            <Label fx:id="affichage" alignment="TOP_LEFT" layoutX="79.0" layoutY="152.0" prefHeight="504.0" prefWidth="828.0" />
+            <Text layoutX="368.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des clients" wrappingWidth="250.9367218017578">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Button fx:id="Afficher" layoutX="79.0" layoutY="106.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" text="Afficher" />
+            <Button fx:id="Suppression_client" layoutX="79.0" layoutY="60.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" text="Tout supprimer" />
+            <Label fx:id="message_avertissement" layoutX="189.0" layoutY="62.0" prefHeight="22.0" prefWidth="446.0" textFill="RED">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
