@@ -22,7 +22,7 @@
       <Label fx:id="emoji2" layoutX="317.0" layoutY="399.0" prefHeight="26.0" prefWidth="40.0" />
       <Label fx:id="msg1" layoutX="56.0" layoutY="342.0" prefHeight="18.0" prefWidth="198.0" textFill="#ff0909" />
       <Label fx:id="msg2" layoutX="56.0" layoutY="403.0" prefHeight="18.0" prefWidth="198.0" textFill="#ff0909" />
-      <Text fill="#1f0cc9" layoutX="220.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Si vous êtes ici c'est que vous voulez vous passer de nos services.                                                                                                                                                                       C'est avec regret que vous nous saluons pour la dernieère fois." wrappingWidth="512.8000122070312" />
+      <Text fill="#1f0cc9" layoutX="220.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Si vous êtes ici c'est que vous voulez vous passer de nos services.                                                                                                                                                                       C'est avec regret que vous nous saluons pour la dernière fois." wrappingWidth="512.8000122070312" />
       <Text layoutX="463.0" layoutY="633.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Ce logiciel vous a été proposé par Jhon-Stiven Guedel Eleve SIO2 - ILEC-NICE" />
       <Label fx:id="message_validation" layoutX="103.0" layoutY="485.0" prefHeight="83.0" prefWidth="670.0" textFill="#13c133">
          <font>
