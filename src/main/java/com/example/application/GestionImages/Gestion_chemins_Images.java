@@ -16,15 +16,5 @@ public class Gestion_chemins_Images {
         public static String Gestion_chemins_Images_Derriere = chemincomplet_cheminrelatif("C:\\Users\\jhsgu\\Desktop\\Application\\Application\\Images\\Images_Client\\Derriere\\", "C:\\Users\\jhsgu\\Desktop\\Application\\Application\\");
 
 
-
-    // Méthode principale ou point d'entrée
-    public static void main(String[] args) {
-        System.out.println(Gestion_chemins_Images_logo);
-        System.out.println(Gestion_chemins_Images_Derriere);
-        System.out.println(Gestion_chemins_Images_Face);
-        System.out.println(Gestion_chemins_Images_Droite);
-        System.out.println(Gestion_chemins_Images_gauche);
-
-    }
 }
 
