@@ -10,7 +10,11 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class Monapplication extends Application {
+    public static void main(String[] args) {
+        launch(args);
+    }
     private Bdd bdd; // Assurez-vous que Bdd est correctement initialisé
+
 
     @Override
     public void init() throws Exception {
