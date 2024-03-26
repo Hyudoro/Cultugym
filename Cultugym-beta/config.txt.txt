@@ -5,3 +5,14 @@ jpackage --type exe ^
 --module-path "C:\Users\jhsgu\Desktop\sdk\javafx-sdk-22\lib" ^
 --add-modules javafx.controls,javafx.fxml ^
 --dest "C:\Users\jhsgu\Desktop\Cultugym-beta"
+
+
+Si le exe ne fonctionne pas pour des raisons de version du jdk, localisez le dossier Application.jar dans
+le dossier out/artifacts/Application_jar du projet.
+installez le javafx-sdk-22.
+et executez cette commande depuis l'invite de commandes :
+
+java --module-path "C:\Users\votre_nom_utilisateur\Desktop\sdk\javafx-sdk-22\lib" --add-modules javafx.controls,javafx.fxml -jar "chemin_complet_du_jar"
+
+dans cette commande vous allez donner le chemin du dossier lib dans le fichier sdk que vous avez installé
+et vous allez également donner le chemin complet vers le jar.
