@@ -215,7 +215,7 @@ Cultugym est distribué sous la licence GNU General Public License v3.0 (GPLv3),
 
 Nous encourageons toute forme de contribution qui respecte les principes de notre communauté. Merci de participer à l'évolution de Cultugym !
 
-Pour consulter la licence, veuillez cliquer [ici](LICENSE).
+Pour consulter la licence, veuillez cliquer [ici](../LICENSE).
 
 # Contact 
 
